@@ -1,0 +1,85 @@
+/**
+ * Global Styles
+ * Main stylesheet for the application using Tailwind CSS.
+ * Contains base styles, component classes, and animations.
+ */
+
+/* Tailwind CSS imports */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-primary-50 text-secondary-950 dark:bg-secondary-950 dark:text-primary-50 
+           font-sans transition-colors duration-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium
+           transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 
+           disabled:pointer-events-none disabled:opacity-50;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-700 text-white hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-200 text-secondary-900 hover:bg-secondary-300 
+           dark:bg-secondary-800 dark:text-secondary-50 dark:hover:bg-secondary-700;
+  }
+  
+  .btn-outline {
+    @apply border border-primary-700 text-primary-700 hover:bg-primary-50 
+           dark:border-primary-500 dark:text-primary-100 dark:hover:bg-primary-950/50;
+  }
+  
+  .input {
+    @apply w-full rounded-lg border border-secondary-200 bg-white px-4 py-2 text-sm
+           focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500
+           dark:border-secondary-800 dark:bg-secondary-900 dark:text-secondary-50;
+  }
+  
+  .card {
+    @apply rounded-xl bg-white p-4 shadow-md transition-shadow hover:shadow-lg
+           dark:bg-secondary-900 dark:shadow-secondary-950/50;
+  }
+  
+  .container-custom {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Animations for page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
