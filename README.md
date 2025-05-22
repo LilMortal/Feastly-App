@@ -4,12 +4,12 @@ A modern web application for discovering and sharing culinary experiences.
 
 ## Features
 
-- 🍽️ Browse and discover restaurants
-- 📱 Responsive design for all devices
-- 🌙 Dark mode support
-- ⚡ Fast and optimized performance
-- 🎨 Beautiful UI with custom animations
-- 🔍 Advanced search and filtering
+-  Browse and discover restaurants
+-  Responsive design for all devices
+-  Dark mode support
+-  Fast and optimized performance
+-  Beautiful UI with custom animations
+-  Advanced search and filtering
 
 ## Tech Stack
 
@@ -89,9 +89,6 @@ This project uses:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
